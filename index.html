@@ -8,17 +8,23 @@
         <meta name='viewport' content='width=device-width, initial-scale=1'>
     </head>
     <body>
-        <textarea id="text" cols="45" rows="3">
-            Testing out text to speach functionality.
-        </textarea>
+        <!-- The text that will be read out loud. -->
+        <textarea id="text" cols="45" rows="3">Testing out text to speach functionality.</textarea>
+        
+        <br />
 
-        <select id="voices-dropdown"></select>
+        <!-- The dropdown with all the language options. -->
+        <select id="voices-dropdown">
+            <!-- Populate with language options. -->
+        </select>
+        
+        <br/>
+        <br/>
 
+        <!-- The button you press to initialize TTS. -->
         <input id="read-button" type="button" value="Read this for me" />
     </body>
 
-    <!-- The Text-To-Speech API -->
-    <!-- <script src="https://code.responsivevoice.org/responsivevoice.js?key=8n5c4mnf"></script> -->
-    <!-- The TTS functionality code. -->
+    <!-- The Text-To-Speech functionality. -->
     <script src='tts.js'></script>
 </html>
